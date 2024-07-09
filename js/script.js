@@ -7,3 +7,7 @@ while (randomNumbers.length < 5) {
     randomNumbers.push(num);
   }
 }
+
+numbersList.innerHTML = `<h1>Ricorda questi 5 numeri: <span>${randomNumbers.join(
+  ", "
+)}</span></h1><br>`;
