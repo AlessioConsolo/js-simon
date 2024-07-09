@@ -15,3 +15,15 @@ numbersList.innerHTML = `<h1>Ricorda questi 5 numeri: <span>${randomNumbers.join
 setTimeout(function () {
   numbersList.querySelector("span").innerHTML = "";
 }, 30000);
+
+setTimeout(function () {
+  for (i = 0; i < 5; i++) {
+    let input = prompt("Inserisci un numero");
+    if (randomNumbers.includes(parseInt(input))) {
+      numbersList.innerHTML += `<h2>Bravo! Hai indovinato il numero ${input}`;
+    } else {
+      numbersList.innerHTML += `<h2>Peccato! Il numero ${input} non è stato
+              indovinato</h2>`;
+    }
+  }
+}, 30000);
