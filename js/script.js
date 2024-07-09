@@ -11,3 +11,7 @@ while (randomNumbers.length < 5) {
 numbersList.innerHTML = `<h1>Ricorda questi 5 numeri: <span>${randomNumbers.join(
   ", "
 )}</span></h1><br>`;
+
+setTimeout(function () {
+  numbersList.querySelector("span").innerHTML = "";
+}, 30000);
